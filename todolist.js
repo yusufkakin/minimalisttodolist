@@ -12,5 +12,7 @@ function newElement() {
 
 document.querySelector("#listitems").addEventListener("click",function(e) {
   let tgt = e.target;
+  if (tgt.tagName.toUpperCase() == "LI") {
   tgt.remove();
+  }
 });
